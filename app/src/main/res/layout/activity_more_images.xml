@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".MoreImages">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Upload more images for your product "
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/imageaddmore1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textttt"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_photo_24" />
+        <Button
+            android:id="@+id/uploadmore1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_background"
+            android:text=" Upload "
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_background"
+            android:layout_below="@id/imageaddmore1"
+            />
+        <View
+            android:id="@+id/view_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_below="@+id/uploadmore1"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/imageaddmore2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/view_more1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_photo_24" />
+        <Button
+            android:id="@+id/uploadmore2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_background"
+            android:text=" Upload "
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_background"
+            android:layout_below="@id/imageaddmore2"
+            />
+        <View
+            android:id="@+id/view_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_below="@+id/uploadmore2"
+            android:layout_gravity="center"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageaddmore3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/view_more2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_photo_24" />
+        <Button
+            android:id="@+id/uploadmore3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_background"
+            android:text=" Upload "
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_background"
+            android:layout_below="@id/imageaddmore3"
+            />
+        <View
+            android:id="@+id/view_more3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_below="@+id/uploadmore3"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *click on image icon to select image from gallery* "
+            android:layout_below="@id/view_more3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+</ScrollView>

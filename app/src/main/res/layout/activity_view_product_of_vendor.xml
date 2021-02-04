@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    tools:context=".ViewProductOfVendor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <SearchView
+            android:id="@+id/search_product"
+            android:queryHint="Search your products here "
+            android:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bt_uifb" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vendor_logo"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:elevation="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/search_product">
+        <ImageView
+            android:id="@+id/vendor_logo_img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/search_product"/>
+            <ImageView
+                android:id="@+id/cityshop_logo_img"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="120dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logocityshop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ifsccd3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/vendor_logo"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="5dp">
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/design_default_color_on_primary"
+                android:layout_alignParentTop="true" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <HorizontalScrollView
+            android:layout_below="@id/ifsccd3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/horizontalScrollView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circlefb"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+           android:layout_toRightOf="@id/cardview_1"
+            android:layout_margin="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/instagram"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            android:layout_toRightOf="@id/cardview_2"
+            android:layout_margin="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circlewhatsapp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            android:layout_toRightOf="@id/cardview_6"
+            android:layout_margin="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_call_24"/>
+
+        </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_toRightOf="@id/cardview_4"
+                    android:layout_margin="5dp"
+                    android:elevation="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_share_24"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_toRightOf="@id/cardview_3"
+                    android:layout_margin="5dp"
+                    android:elevation="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/circletwitter"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:layout_below="@id/horizontalScrollView"
+            android:textColor="@color/design_default_color_on_primary"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/product_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalScrollView"
+            android:layout_alignStart="@id/ifsccd3"
+            android:layout_margin="5dp"
+            android:layout_alignEnd="@id/dot2"
+            android:text="Products"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/bt_uifb"/>
+        <Button
+            android:id="@+id/service_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalScrollView"
+            android:layout_alignStart="@id/dot2"
+            android:layout_margin="5dp"
+            android:text="Services"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignEnd="@id/ifsccd3"
+            android:background="@drawable/bt_uifb"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcerView_vendor_tab"
+            android:layout_below="@+id/product_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:background="@drawable/bt_uifb"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

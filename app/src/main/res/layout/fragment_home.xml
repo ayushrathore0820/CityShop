@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcerView3"
+           android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_uifb"
+            android:scrollbars = "horizontal" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ifsccd"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/recylcerView3"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="10dp">
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/design_default_color_on_primary"
+                android:layout_alignParentTop="true" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcerView2"
+            android:layout_below="@+id/ifsccd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bt_uifb"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

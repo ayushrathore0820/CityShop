@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="55dp"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ifsccd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/recylcerView3"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="5dp"
+        android:layout_rowWeight="1"
+        app:cardElevation="10dp">
+
+        <com.smarteist.autoimageslider.SliderLayout
+            android:id="@+id/imageSlider2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_alignParentTop="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView_service"
+        android:layout_below="@+id/ifsccd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_uifb"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PaymentVendor">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" City shop 18 Package Details "
+       android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the Package from the following List to add your prodcucts and services in City Shop 18"
+        android:gravity="left"
+        android:layout_margin="10dp"
+        android:textColor="@color/design_default_color_primary"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radio_group1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Products pacakge charge Rs 4250/-"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+        <RadioButton
+            android:id="@+id/radio_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4250"
+            android:checked="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Service pacakge charge Rs 1999/-"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <RadioButton
+            android:id="@+id/radio_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1999"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Combo pack (products and services) charge is Rs 5000/-"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <RadioButton
+            android:id="@+id/radio_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/orderamount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="@drawable/bt_uifb"
+        android:layout_margin="20dp"
+       android:text="price"
+        android:textColor="#02b89a"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/ba"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/login_username"
+        android:hint=" BA Code (Optional) "
+        android:layout_alignStart="@id/relativelayout2"
+        android:layout_alignEnd="@id/relativelayout2"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/startpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#02b89a"
+        android:text="Start Payment"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" OR "
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Apply cupon code if any and make payment "
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/cuponcode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/login_username"
+        android:hint=" cupon code (Optional) "
+        android:layout_alignStart="@id/relativelayout2"
+        android:layout_alignEnd="@id/relativelayout2"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/codeapply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_background"
+        android:text=" Apply cupon code and make payment"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+
+</ScrollView>

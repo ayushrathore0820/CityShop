@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorWhitematte"
+    tools:context=".Login">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Login as "
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorForeground"
+        android:layout_marginTop="50dp"
+        android:textSize="60dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/relativelayout2"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/heading">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#26466D"
+            android:id="@+id/signupvendor">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:id="@+id/image1"
+                android:layout_height="150dp"
+                android:src="@drawable/vendorimg"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtvendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#26466D"
+            android:layout_below="@id/signupvendor"
+            android:layout_marginTop="10dp"
+            android:text=" Vendor "
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_toRightOf="@+id/signupvendor"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#D2691E"
+            android:id="@+id/signupcustomer">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/image2"
+                android:src="@drawable/customerimg"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#D2691E"
+            android:layout_below="@id/signupcustomer"
+            android:layout_marginTop="10dp"
+            android:text=" Customer "
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@+id/txtvendor"
+            />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/relativelayout2"
+        android:hint=" Phone or Email "
+        android:layout_alignStart="@id/relativelayout2"
+        android:layout_alignEnd="@id/relativelayout2"
+        android:textColorHint="@color/colorForeground"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorForeground"
+        android:inputType="textEmailAddress|number" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/login_username"
+        android:hint=" Password "
+        android:layout_alignStart="@id/relativelayout2"
+        android:layout_alignEnd="@id/relativelayout2"
+        android:textColorHint="@color/colorForeground"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorForeground"
+        android:inputType="numberPassword"/>
+
+    <TextView
+        android:id="@+id/textor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" or "
+        android:layout_below="@id/login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#A8A8A8"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#A8A8A8"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@id/relativelayout2"
+        android:layout_below="@id/login"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignEnd="@id/textor"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#A8A8A8"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@id/textor"
+        android:layout_below="@id/login"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_alignEnd="@id/relativelayout2"/>
+
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textor"
+        android:layout_marginTop="5dp"
+        android:text=" SignUp Instead "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorForeground"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text=" Login "
+        android:id="@+id/login"
+        android:textColor="@color/colorWhitematte"
+        android:background="@drawable/login_background"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

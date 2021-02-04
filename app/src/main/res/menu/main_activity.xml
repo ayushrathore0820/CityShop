@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/item1"
+        android:title="Item 1"
+        app:showAsAction="always"
+        android:tooltipText="notification"
+        android:icon="@drawable/ic_baseline_notifications_active_24"/>
+    <item  android:id="@+id/item2"
+        android:title="Item 1"
+        app:showAsAction="always"
+        android:tooltipText="my cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+    <item  android:id="@+id/item3"
+        android:title="Item 1"
+        app:showAsAction="always"
+        android:tooltipText="Vendor registration"
+        android:icon="@drawable/ic_baseline_how_to_reg_24"/>
+</menu>

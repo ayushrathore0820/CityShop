@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CityShop 18</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Service</string>
+    <string name="title_notifications">Vendor</string>
+    <string name="title_login">Vendor Registration</string>
+</resources>

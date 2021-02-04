@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Logo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/text1"
+                android:id="@+id/relativelayoutlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"/>
+
+                <TextView
+                    android:id="@+id/txtlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="Logo"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="Set Your Shop logo "
+                    android:layout_below="@+id/txtlogo"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_title"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/logo"
+                    android:src="@drawable/ic_baseline_assistant_24"/>
+
+                <TextView
+                    android:id="@+id/titleheadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_title"
+                    android:text="Shop Title "
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutheadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_title"
+                    android:text="Set Shop Title Message "
+                    android:layout_below="@+id/titleheadline"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Business Settings "
+                android:layout_below="@+id/relativelayoutlogo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/text2"
+                android:id="@+id/relativelayoutbussinessetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background">
+
+                <ImageView
+                    android:id="@+id/buss_name"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_assignment_ind_24"/>
+
+                <TextView
+                    android:id="@+id/txtbuss_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/buss_name"
+                    android:text="Business Name"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutbuss_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/buss_name"
+                    android:text="Set Your Business profile name "
+                    android:layout_below="@+id/txtbuss_name"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_buss_username"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/buss_name"
+                    android:src="@drawable/ic_baseline_comment_24"/>
+
+                <TextView
+                    android:id="@+id/username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_username"
+                    android:text="Shop Name "
+                    android:layout_below="@+id/buss_name"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txt_username_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_username"
+                    android:text="Set your City Shop 18 Shop Name  "
+                    android:layout_below="@+id/username_title"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_buss_mobile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/img_buss_username"
+                    android:src="@drawable/ic_baseline_call_24"/>
+
+                <TextView
+                    android:id="@+id/mobile_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_mobile"
+                    android:text="Mobile Number "
+                    android:layout_below="@+id/img_buss_username"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txt_mobile_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_mobile"
+                    android:text="Set your Mobile number for customer "
+                    android:layout_below="@+id/mobile_title"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_buss_address"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/img_buss_mobile"
+                    android:src="@drawable/ic_baseline_apartment_24"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_address"
+                    android:text="Shop Address"
+                    android:layout_below="@+id/img_buss_mobile"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txt_address_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_username"
+                    android:text="This Address is Visible as Your shop address "
+                    android:layout_below="@+id/address_title"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+
+                <ImageView
+                    android:id="@+id/img_buss_gst"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/img_buss_address"
+                    android:src="@drawable/ic_baseline_receipt_24"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/gst_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_address"
+                    android:text="GST Number "
+                    android:layout_below="@+id/img_buss_address"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txt_gst_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_gst"
+                    android:text="Add your GST number to show on your order invoice "
+                    android:layout_below="@+id/gst_title"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_buss_email"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/img_buss_gst"
+                    android:src="@drawable/ic_baseline_email_24"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_gst"
+                    android:text="Shop Email Address "
+                    android:layout_below="@+id/img_buss_gst"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txt_email_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_buss_email"
+                    android:text="This Email Address use to send invoice to customer "
+                    android:layout_below="@+id/email_title"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Social Media Link"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/text3"
+                android:id="@+id/relativelayoutsocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/circlefb"/>
+
+                <TextView
+                    android:id="@+id/txtfackebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/facebook"
+                    android:text="Facebook"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutsocial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/facebook"
+                    android:text="Set your facebook link to see your facebook account "
+                    android:layout_below="@+id/txtfackebook"
+                    android:textStyle="italic"
+                    android:autoLink="web"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_insta"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/facebook"
+                    android:src="@drawable/circleinsta"/>
+
+                <TextView
+                    android:id="@+id/txtinsta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_insta"
+                    android:text="Instagram"
+                    android:layout_below="@+id/facebook"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutinsta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_insta"
+                    android:text="Set your Instagram link to see your Instagram account "
+                    android:layout_below="@+id/txtinsta"
+                    android:textStyle="italic"
+                    android:autoLink="web"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_twit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/img_insta"
+                    android:src="@drawable/circletwitter"/>
+
+                <TextView
+                    android:id="@+id/txttwit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_twit"
+                    android:text="Twitter"
+                    android:layout_below="@+id/img_insta"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtabouttwit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_twit"
+                    android:text="Set your Twitter link to see your Twitter account "
+                    android:layout_below="@+id/txttwit"
+                    android:textStyle="italic"
+                    android:autoLink="web"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Shop Information "
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:textColor="@color/design_default_color_on_secondary"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/relativelayoutsocial"
+                android:id="@+id/relativelayoutterms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/design_default_color_background">
+
+                <ImageView
+                    android:id="@+id/privacy"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_security_24"/>
+
+                <TextView
+                    android:id="@+id/txtprivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/privacy"
+                    android:text="Privacy and Return Policy"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutpriyacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/privacy"
+                    android:text="Add your shop's Privacy and return Policy here"
+                    android:layout_below="@+id/txtprivacy"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+                <ImageView
+                    android:id="@+id/img_about"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/privacy"
+                    android:src="@drawable/ic_baseline_new_releases_24"/>
+
+                <TextView
+                    android:id="@+id/txtabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_about"
+                    android:text="About Your Shop"
+                    android:layout_below="@+id/privacy"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:textColor="@color/design_default_color_on_secondary"/>
+
+                <TextView
+                    android:id="@+id/txtaboutabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_about"
+                    android:text="Tell customer about your shop on best words "
+                    android:layout_below="@+id/txtabout"
+                    android:textStyle="italic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_background"
+                android:text=" LOGOUT "
+                android:textSize="15dp"
+                android:textColor="@color/design_default_color_background"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:gravity="center"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/cardview_light_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/cardview_light_background"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/vendor_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" service name "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/cardview"
+       android:gravity="center"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_below="@+id/shopname"
+            android:layout_gravity="center"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" View Product and Services "
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/view3"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+       android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>
